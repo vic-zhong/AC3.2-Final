@@ -22,6 +22,12 @@ class PicsTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableViewAutomaticDimension
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getLinks()
+        self.parent?.navigationItem.rightBarButtonItem = nil
+    }
+    
     // MARK: - Functions
     
     func getLinks() {
@@ -62,7 +68,7 @@ class PicsTableViewController: UITableViewController {
         let storage = FIRStorage.storage()
         
         // Create a storage reference from our storage service
-        let storageRef = storage.reference()
+        let storageRef = storage.reference(forURL: "gs://ac-32-final.appspot.com")
         let spaceRef = storageRef.child("images/\(pic.key)")
         spaceRef.data(withMaxSize: 1 * 800 * 800) { data, error in
             if let error = error {

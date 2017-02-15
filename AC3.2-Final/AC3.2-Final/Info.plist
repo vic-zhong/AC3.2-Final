@@ -44,7 +44,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>&quot;Need your photos&quot;</string>
 </dict>
 </plist>

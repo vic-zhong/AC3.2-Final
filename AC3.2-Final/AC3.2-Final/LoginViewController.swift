@@ -86,7 +86,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     print("Error \(error)")
                 }
                 if user != nil {
-                    self.showOKAlert(title: "\((user?.email)!) Logged In!", message: "Good Job!", dismissCompletion: {
+                    self.showOKAlert(title: "\((user?.email)!) Logged In!", message: nil, dismissCompletion: {
                         action in self.performSegue(withIdentifier: "login", sender: self)
                     })
                 }

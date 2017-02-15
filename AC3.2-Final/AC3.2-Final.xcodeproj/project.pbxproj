@@ -17,6 +17,8 @@
 		9E2602A71E54C04300D26AA0 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2602A61E54C04300D26AA0 /* NavController.swift */; };
 		9E2602A91E54C82A00D26AA0 /* PicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2602A81E54C82A00D26AA0 /* PicsTableViewController.swift */; };
 		9E2602AB1E54C86C00D26AA0 /* PicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2602AA1E54C86C00D26AA0 /* PicsTableViewCell.swift */; };
+		9E2602AD1E54D28B00D26AA0 /* Pic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2602AC1E54D28B00D26AA0 /* Pic.swift */; };
+		9ECD20581E54DCD600CE0934 /* UploadPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD20571E54DCD600CE0934 /* UploadPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		9E2602A61E54C04300D26AA0 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		9E2602A81E54C82A00D26AA0 /* PicsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicsTableViewController.swift; sourceTree = "<group>"; };
 		9E2602AA1E54C86C00D26AA0 /* PicsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicsTableViewCell.swift; sourceTree = "<group>"; };
+		9E2602AC1E54D28B00D26AA0 /* Pic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pic.swift; sourceTree = "<group>"; };
+		9ECD20571E54DCD600CE0934 /* UploadPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPhotoViewController.swift; sourceTree = "<group>"; };
 		BFA81E3A843E8FCC07FEEE67 /* Pods_AC3_2_Final.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AC3_2_Final.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,7 @@
 		1EA112FD1E53C0B1004B66E3 /* AC3.2-Final */ = {
 			isa = PBXGroup;
 			children = (
+				9E2602AE1E54D29900D26AA0 /* Models */,
 				9E2602A21E54B6AC00D26AA0 /* Supporting Files */,
 				9E2602A51E54B6BF00D26AA0 /* VCs */,
 			);
@@ -112,8 +117,17 @@
 				9E2602A61E54C04300D26AA0 /* NavController.swift */,
 				9E2602A81E54C82A00D26AA0 /* PicsTableViewController.swift */,
 				9E2602AA1E54C86C00D26AA0 /* PicsTableViewCell.swift */,
+				9ECD20571E54DCD600CE0934 /* UploadPhotoViewController.swift */,
 			);
 			name = VCs;
+			sourceTree = "<group>";
+		};
+		9E2602AE1E54D29900D26AA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E2602AC1E54D28B00D26AA0 /* Pic.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2602AD1E54D28B00D26AA0 /* Pic.swift in Sources */,
 				9E2602AB1E54C86C00D26AA0 /* PicsTableViewCell.swift in Sources */,
 				9E2602A41E54B6BB00D26AA0 /* LoginViewController.swift in Sources */,
+				9ECD20581E54DCD600CE0934 /* UploadPhotoViewController.swift in Sources */,
 				1EA112FF1E53C0B1004B66E3 /* AppDelegate.swift in Sources */,
 				9E2602A91E54C82A00D26AA0 /* PicsTableViewController.swift in Sources */,
 				9E2602A71E54C04300D26AA0 /* NavController.swift in Sources */,
