@@ -345,6 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.ac32final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.ac32final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -380,6 +382,7 @@
 				1EA1130F1E53C0B1004B66E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
