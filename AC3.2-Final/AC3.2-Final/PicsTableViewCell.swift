@@ -10,9 +10,12 @@ import UIKit
 
 class PicsTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var picView: UIImageView!
+    @IBOutlet weak var commentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        picView.image = nil
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
