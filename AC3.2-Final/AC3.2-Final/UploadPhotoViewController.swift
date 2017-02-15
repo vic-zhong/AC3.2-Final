@@ -38,7 +38,6 @@ class UploadPhotoViewController: UIViewController, UITextFieldDelegate, UIImageP
         self.parent?.navigationItem.rightBarButtonItem = doneButton
         doneButton.isEnabled = false
         self.doneButton.action = #selector(didTapDoneButton)
-        //        self.doneButton.addTarget(self, action: #selector(didTapDoneButton), for: .touchUpInside)
         commentField.delegate = self
         databaseReference = FIRDatabase.database().reference().child("posts")
     }
