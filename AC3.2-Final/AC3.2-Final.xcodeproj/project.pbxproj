@@ -13,6 +13,7 @@
 		1EA113061E53C0B1004B66E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA113051E53C0B1004B66E3 /* Assets.xcassets */; };
 		1EA113091E53C0B1004B66E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA113071E53C0B1004B66E3 /* LaunchScreen.storyboard */; };
 		1EA113131E53C130004B66E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EA113121E53C130004B66E3 /* GoogleService-Info.plist */; };
+		42F701846D7174CF5CCFFEC6 /* Pods_AC3_2_Final.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA81E3A843E8FCC07FEEE67 /* Pods_AC3_2_Final.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1EA113081E53C0B1004B66E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EA1130A1E53C0B1004B66E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EA113121E53C130004B66E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		36FC7FDCA9319FBCD5A87DB8 /* Pods-AC3.2-Final.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AC3.2-Final.release.xcconfig"; path = "Pods/Target Support Files/Pods-AC3.2-Final/Pods-AC3.2-Final.release.xcconfig"; sourceTree = "<group>"; };
+		5B497AAB8F237B2B41EC1F79 /* Pods-AC3.2-Final.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AC3.2-Final.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AC3.2-Final/Pods-AC3.2-Final.debug.xcconfig"; sourceTree = "<group>"; };
+		BFA81E3A843E8FCC07FEEE67 /* Pods_AC3_2_Final.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AC3_2_Final.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F701846D7174CF5CCFFEC6 /* Pods_AC3_2_Final.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1EA112FD1E53C0B1004B66E3 /* AC3.2-Final */,
 				1EA112FC1E53C0B1004B66E3 /* Products */,
+				3B88638960F535C22FF9379B /* Pods */,
+				30A2E9F4C928B7AAE8CCC4E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "AC3.2-Final";
 			sourceTree = "<group>";
 		};
+		30A2E9F4C928B7AAE8CCC4E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFA81E3A843E8FCC07FEEE67 /* Pods_AC3_2_Final.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B88638960F535C22FF9379B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B497AAB8F237B2B41EC1F79 /* Pods-AC3.2-Final.debug.xcconfig */,
+				36FC7FDCA9319FBCD5A87DB8 /* Pods-AC3.2-Final.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EA1130D1E53C0B1004B66E3 /* Build configuration list for PBXNativeTarget "AC3.2-Final" */;
 			buildPhases = (
+				9E539FCAB9A56B8C5E0D26F9 /* [CP] Check Pods Manifest.lock */,
 				1EA112F71E53C0B1004B66E3 /* Sources */,
 				1EA112F81E53C0B1004B66E3 /* Frameworks */,
 				1EA112F91E53C0B1004B66E3 /* Resources */,
+				16EBE9A6335DFAE8B05A284C /* [CP] Embed Pods Frameworks */,
+				FF10A47D6146A0ACCEAFE9C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16EBE9A6335DFAE8B05A284C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AC3.2-Final/Pods-AC3.2-Final-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E539FCAB9A56B8C5E0D26F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF10A47D6146A0ACCEAFE9C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AC3.2-Final/Pods-AC3.2-Final-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EA112F71E53C0B1004B66E3 /* Sources */ = {
@@ -262,6 +337,7 @@
 		};
 		1EA1130E1E53C0B1004B66E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B497AAB8F237B2B41EC1F79 /* Pods-AC3.2-Final.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "AC3.2-Final/Info.plist";
@@ -274,6 +350,7 @@
 		};
 		1EA1130F1E53C0B1004B66E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36FC7FDCA9319FBCD5A87DB8 /* Pods-AC3.2-Final.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "AC3.2-Final/Info.plist";
