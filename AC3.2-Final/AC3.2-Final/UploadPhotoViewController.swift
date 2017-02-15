@@ -60,6 +60,10 @@ class UploadPhotoViewController: UIViewController, UITextFieldDelegate, UIImageP
         picker.dismiss(animated: true)
     }
     
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
@@ -111,7 +115,7 @@ class UploadPhotoViewController: UIViewController, UITextFieldDelegate, UIImageP
                 }
             }
             else {
-               self.alertUser(text: "Please Enter Some Text")
+                self.alertUser(text: "Please Enter Some Text")
             }
         }
     }
