@@ -66,6 +66,18 @@ The file structure of the storage is illustrated here:
 
 Note the relationship between image names and objects in the database.
 
+#### Uploading Images
+
+Be sure to render your images into compressed JPEG format as we did in the review.
+Here's a line of code that takes a ```UIImage``` and generates a ```Data``` object
+with JPEG data. 
+
+```swift
+let image: UIImage = ...obtain uiimage somehow...
+let data = UIImageJPEGRepresentation(image, 0.5)
+```
+
+
 ## Individual Screen Details
 
 ### Login
